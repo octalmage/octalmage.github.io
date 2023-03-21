@@ -159,7 +159,7 @@ const Links = () => {
               {(newProduct) ? <NewSection>
                 <a href={newProductUrl} target="_blank" rel="noreferrer">
                   <img
-                    src={'/newproduct.png'}
+                    src={'newproduct.png'}
                     className="newproduct"
                   />
                 </a>

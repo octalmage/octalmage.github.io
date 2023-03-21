@@ -2,6 +2,8 @@
 const nextConfig = {
     reactStrictMode: true,
     swcMinify: true,
+    assetPrefix: './',
+    trailingSlash: true,
     images: {
         unoptimized: true,
     },

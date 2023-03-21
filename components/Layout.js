@@ -13,7 +13,7 @@ export default function Layout({ children }) {
 
 const Main = styled.main`
   min-height: 100vh;
-  background: url('/bg.png') no-repeat;
+  background: url('bg.png') no-repeat;
   background-size: 100%;
   background-position: -50vh 10%;
   background-attachment: fixed;

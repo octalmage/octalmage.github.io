@@ -5,7 +5,7 @@ const bioData = [
         username: 'octalmage.github.io',
         url: 'https://octalmage.github.io',
         titleImg: true,
-        avatar: '/avatar.png',
+        avatar: 'avatar.png',
         nftAvatar: true,
         description: 'Software Person',
         descShow: true,

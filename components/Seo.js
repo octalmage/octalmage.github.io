@@ -17,28 +17,16 @@ export default function Seo({ page }) {
                     title: `${title}`,
                     description: `${seoData.openGraph.description}`,
                     locale: 'en_EN',
-                    images: [
-                        {
-                            width: 1200,
-                            height: 630,
-                            url: `${seoData.openGraph.images[0].url}`,
-                            alt: `${title}`,
-                        },
-                    ],
+                    images: [],
                     site_name: 'vjy.me',
                 }}
                 twitter={{
-                    handle: '@realvjy',
-                    site: 'vjy.me',
+                    handle: '@octalmage',
                     cardType: 'summary_large_image',
                 }}
                 additionalMetaTags={[{
                     name: 'keywords',
                     content: `${seoData.openGraph.keywords}`
-                },
-                {
-                    name: 'twitter:image',
-                    content: `${seoData.openGraph.images[0].url}`
                 },
                 {
                     httpEquiv: 'x-ua-compatible',

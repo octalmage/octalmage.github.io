@@ -39,10 +39,6 @@ function MyApp({ Component, pageProps }) {
                             content: SEO.openGraph.keywords,
                         },
                         {
-                            name: 'twitter:image',
-                            content: SEO.openGraph.images[0].url
-                        },
-                        {
                             name: 'twitter:title',
                             content: SEO.openGraph.title,
                         },

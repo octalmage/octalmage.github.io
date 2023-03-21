@@ -2,15 +2,22 @@
 const webLinks = [
     // All social profile
     {
+        title: 'Github',
+        url: 'https://github.com/octalmage',
+        type: 'social',
+        icon: '/github.svg',
+        on: true
+    },
+    {
         title: 'Twitter',
-        url: 'https://twitter.com/realvjy',
+        url: 'https://twitter.com/octalmage',
         type: 'social',
         icon: '/twitter.svg',
         on: true
     },
     {
         title: 'Instagram',
-        url: 'https://instagram.com/realvjy',
+        url: 'https://instagram.com/octalmage',
         type: 'social',
         icon: '/insta.svg',
         on: true
@@ -22,20 +29,13 @@ const webLinks = [
         icon: '/dribbble.svg',
         on: false
     },
-    {
-        title: 'Medium',
-        url: 'https://medium.com/@realvjy',
-        type: 'social',
-        icon: '/medium.svg',
-        on: false
-    },
-    {
-        title: 'Github',
-        url: 'https://github.com/realvjy',
-        type: 'social',
-        icon: '/github.svg',
-        on: true
-    },
+    // {
+    //     title: 'Medium',
+    //     url: 'https://medium.com/@realvjy',
+    //     type: 'social',
+    //     icon: '/medium.svg',
+    //     on: false
+    // },
     {
         title: 'Youtube',
         url: 'https://youtube.com/realvjy',
@@ -43,13 +43,13 @@ const webLinks = [
         icon: '/youtube.svg',
         on: false
     },
-    {
-        title: 'Figma',
-        url: 'https://figma.com/@realvjy',
-        type: 'social',
-        icon: '/figma.svg',
-        on: true
-    },
+    // {
+    //     title: 'Figma',
+    //     url: 'https://figma.com/@realvjy',
+    //     type: 'social',
+    //     icon: '/figma.svg',
+    //     on: true
+    // },
     {
         title: 'Behance',
         url: 'https://behance.net/realvjy',
@@ -63,13 +63,6 @@ const webLinks = [
         type: 'social',
         icon: '/linkedin.svg',
         on: false
-    },
-    {
-        title: 'Mastodon',
-        url: 'https://mastodon.online/@realvjy',
-        type: 'social',
-        icon: '/mastodon.svg',
-        on: true
     },
     {
         title: 'Hive Social',
@@ -93,11 +86,11 @@ const webLinks = [
         on: false
     },
     {
-        title: 'opensea',
-        url: 'https://vjy.me',
-        type: 'nft',
+        title: 'Opensea',
+        url: 'https://opensea.io/octalmage',
+        type: 'social',
         icon: '/opensea.svg',
-        on: false
+        on: true
     },
     {
         title: 'new collection',
@@ -106,57 +99,40 @@ const webLinks = [
         icon: '/opensea.svg',
         on: false
     },
-    // Install section
+    // links section
     {
-        title: 'Use this template',
-        url: 'https://github.com/realvjy/nxt-lnk/generate',
-        type: 'install',
+        title: 'Keybase',
+        url: 'https://keybase.io/octalmage',
+        type: 'links',
+        icon: '/keybase.svg',
+        on: true
+    },
+    {
+        title: 'Website',
+        url: 'https://jason.stallin.gs',
+        type: 'links',
         icon: '/use.png',
         on: true
     },
     {
-        title: 'Deploy on Vercel',
-        url: 'https://vercel.com/import/git?s=https://github.com/realvjy/nxt-lnk',
-        type: 'install',
-        icon: '/vercel.svg',
+        title: 'Tumblr',
+        url: 'https://octalmage.com',
+        type: 'links',
+        icon: '/tumblr.svg',
         on: true
     },
     {
-        title: 'Documentation',
-        url: 'https://github.com/realvjy/nxt-lnk#nxt-lnk',
-        type: 'install',
-        icon: '/doc.png',
-        on: true
-    },
-    {
-        title: 'Github',
-        url: 'https://github.com/realvjy/nxt-lnk',
-        type: 'install',
-        icon: '/github-fill.svg',
-        on: true
-    },
-
-    {
-        title: 'Buy Me a Coffee',
-        url: 'https://www.buymeacoffee.com/realvjy',
+        title: 'Terra',
+        url: 'https://terra.money',
         type: 'other',
-        icon: '/bmc.png',
+        icon: '/tumblr.svg',
         on: true
     },
-
     {
-        title: 'link demo',
-        url: 'https://vjy.me/lnk',
+        title: 'Cosmos',
+        url: 'https://cosmos.network',
         type: 'other',
-        icon: '/vjy.png',
-        on: true
-    },
-
-    {
-        title: 'maker website',
-        url: 'https://vjy.me',
-        type: 'other',
-        icon: '/vjy.png',
+        icon: '/tumblr.svg',
         on: true
     },
 ];

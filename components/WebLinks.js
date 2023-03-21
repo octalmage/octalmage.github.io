@@ -27,7 +27,9 @@ const Links = () => {
   const footerText = bioData[0].footerText;
   const author = bioData[0].author;
   const authorURL = bioData[0].authorURL;
-  const titleImage = "/title.svg";
+  const titleImage = undefined;
+  const d = new Date(); 
+  const currentYear = d.getFullYear(); 
 
   // Check what class to use oval or hex for avatar
   const avatarShape = bioData[0].nftAvatar ? `nft-clipped` : `oval-clipped`
@@ -50,8 +52,8 @@ const Links = () => {
   });
 
   // Get data for install section
-  const install = allLinks.filter((el) => {
-    return el.type === "install" && el.on
+  const links = allLinks.filter((el) => {
+    return el.type === "links" && el.on
   });
 
   // Get data for nfts
@@ -82,17 +84,7 @@ const Links = () => {
                 />
               </AvatarWrap>
             </Avatar>
-            <Title>
-              {/* Using titleimg flag to use image as title or text */}
-              {titleImg ?
-                <img src={titleImage} className="handle" /> :
-                <h1>{name}</h1>
-              }
-              {/* if your remove username from data it will not appear */}
-              {
-                username ? <h3><a href={`${url}`}>{username}</a></h3> : ''
-              }
-            </Title>
+          
           </LinkHeader>
 
           {/* Bio Section */}
@@ -122,11 +114,11 @@ const Links = () => {
             </LinkSection>
             {/* Social Icon */}
 
-            {/* Install Section */}
+            {/* Links Section */}
             <LinkSection>
-              <h3>{install[0].type}</h3>
+              <h3>{links[0].type}</h3>
               {
-                install.map((i) => {
+                links.map((i) => {
                   return (
                     <a href={i.url} key={i.title} target="_blank" rel="noreferrer">
                       <LinkBox>
@@ -137,7 +129,7 @@ const Links = () => {
                 })
               }
             </LinkSection>
-            {/* End Install Section */}
+            {/* End Links Section */}
 
             {/* NFT Section */}
             {
@@ -160,7 +152,6 @@ const Links = () => {
             }
             {/* End NFT Section */}
 
-            {/* Other Section */}
             <LinkSection>
               <h3>{others[0].type}</h3>
               {/* BioData.js > newProduct == true */}
@@ -180,7 +171,7 @@ const Links = () => {
                   return (
                     <a href={i.url} key={i.title} target="_blank" rel="noreferrer">
                       <LinkBox>
-                        <LinkTitle><img src={i.icon} /> {i.title}</LinkTitle> <NewUp />
+                        <LinkTitle><div style={{ height: '20px', width: '20px', marginRight: '10px' }}>&nbsp;</div> {i.title}</LinkTitle> <NewUp />
                       </LinkBox>
                     </a>
                   )
@@ -188,13 +179,12 @@ const Links = () => {
               }
             </LinkSection>
             {/* End Other Section */}
-
           </WebLinkWrap>
           {/* End Weblinks */}
         </TopPart>
         <BottomPart>
           <LinkFoot>
-            <h4>{footerText} <a href={authorURL}>{author}</a></h4>
+            <h4>&copy; Copyright {currentYear}, Jason Stallings</h4>
           </LinkFoot>
         </BottomPart>
 

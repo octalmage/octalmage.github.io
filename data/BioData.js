@@ -1,20 +1,20 @@
 // date: 1 Aug, 2022
 const bioData = [
     {
-        name: 'nxt lnk',
-        username: 'nxtlnk.vercel.app',
-        url: 'https://nxtlnk.vercel.app',
+        name: 'octalmage',
+        username: 'octalmage.github.io',
+        url: 'https://octalmage.github.io',
         titleImg: true,
         avatar: '/avatar.png',
         nftAvatar: true,
-        description: 'Custom bio links for creatives who love coding. Made this first to use for my own weblinks vjy.me/lnk. ',
+        description: 'Software Person',
         descShow: true,
-        subdesc: 'Use this template and deploy on vercel for free',
-        subdescShow: true,
-        newProductUrl: 'https://3dicons.co',
+        subdesc: '',
+        subdescShow: false,
+        newProductUrl: 'https://github.com/terra-money/terrain',
         newProduct: true,
-        author: 'realvjy',
-        authorURL: 'https://twitter.com/realvjy',
+        author: 'Jason Stallings',
+        authorURL: 'https://jason.stallin.gs',
         footerText: 'made by'
     },
 ];

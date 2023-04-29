@@ -48,11 +48,6 @@ export default class MyDocument extends Document {
 
                     <Main />
                     <NextScript />
-                    <div style="position: fixed; bottom: 15px; right: 15px;">
-                        <a title="View on IPFS" href="https://jax-zone.ipns.dweb.link">
-                            <img alt="IPFS" style="width: 50px;" src="https://upload.wikimedia.org/wikipedia/commons/1/18/Ipfs-logo-1024-ice-text.png" />
-                        </a>
-                    </div>
                 </body>
             </Html>
         );

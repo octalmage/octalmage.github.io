@@ -1,4 +1,5 @@
 /** @type {import('next').NextConfig} */
+const webpack = require('webpack');
 const nextConfig = {
     reactStrictMode: true,
     swcMinify: true,
@@ -18,6 +19,13 @@ const nextConfig = {
                 destination: '/',
             },
         ]
+    },
+    webpack: (config, options) => {
+        config.plugins.push(new webpack.optimize.LimitChunkCountPlugin({
+            maxChunks: 1
+        }))
+
+        return config
     },
 }
 

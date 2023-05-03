@@ -11,7 +11,7 @@ const bioData = [
         descShow: true,
         subdesc: '',
         subdescShow: false,
-        newProductUrl: 'https://github.com/terra-money/terrain',
+        newProductUrl: 'https://jax.zone',
         newProduct: true,
         author: 'Jason Stallings',
         authorURL: 'https://jason.stallin.gs',

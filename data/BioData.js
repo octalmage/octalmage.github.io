@@ -12,9 +12,9 @@ const bioData = [
         subdesc: '',
         subdescShow: false,
         newProductUrl: 'https://jax.zone',
-        newProduct: true,
-        author: 'Jason Stallings',
-        authorURL: 'https://jason.stallin.gs',
+        newProduct: false,
+        author: 'octalmage',
+        authorURL: '',
         footerText: 'made by'
     },
 ];

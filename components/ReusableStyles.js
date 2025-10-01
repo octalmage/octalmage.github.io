@@ -100,6 +100,4 @@ export const ButtonLink = styled.a`
     background: linear-gradient(262.31deg, #06F1F8 1.86%, #2F8FFF 27.73%, #FF3382 68.97%, #FFBD6F 99.88%);
     transition: all .3s;
     position: relative;
- 
-
 `

@@ -1,0 +1,54 @@
+<svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Orange to Yellow Gradient -->
+    <linearGradient id="swarmGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF6B35;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#F7931E;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFC72C;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Glow effect -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Drop shadow -->
+    <filter id="dropshadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="rgba(255,107,53,0.3)"/>
+    </filter>
+  </defs>
+  
+  <!-- Background with subtle gradient -->
+  <rect width="120" height="40" rx="20" fill="url(#swarmGradient)" opacity="0.1"/>
+  
+  <!-- Hexagon pattern (simplified Swarm logo representation) -->
+  <g transform="translate(10, 8)">
+    <!-- Main hexagon -->
+    <polygon points="12,2 22,7 22,17 12,22 2,17 2,7" 
+             fill="url(#swarmGradient)" 
+             filter="url(#glow)"
+             opacity="0.9"/>
+    
+    <!-- Inner hexagons for depth -->
+    <polygon points="12,5 18,8 18,16 12,19 6,16 6,8" 
+             fill="none" 
+             stroke="url(#swarmGradient)" 
+             stroke-width="1" 
+             opacity="0.6"/>
+    
+    <!-- Center dot -->
+    <circle cx="12" cy="12" r="2" fill="url(#swarmGradient)" filter="url(#glow)"/>
+  </g>
+  
+  <!-- "SWARM" text -->
+  <text x="38" y="16" font-family="Arial, sans-serif" font-size="10" font-weight="bold" 
+        fill="url(#swarmGradient)" filter="url(#dropshadow)">SWARM</text>
+  
+  <!-- "Decentralized Storage" subtitle -->
+  <text x="38" y="28" font-family="Arial, sans-serif" font-size="7" 
+        fill="url(#swarmGradient)" opacity="0.7">Decentralized Storage</text>
+</svg>

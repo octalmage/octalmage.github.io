@@ -16,7 +16,7 @@ jobs:
           node-version: '20'
 
       - name: Build
-        run: npm ci && npm run build
+        run: npm ci --legacy-peer-deps && npm run build
 
       - name: Deploy to Swarm
         uses: o8is/hostasis-cli@v0.1.2

@@ -137,7 +137,7 @@ const webLinks = [
     on: false,
   },
   {
-    title: "Tumblr",
+    title: "Blog",
     url: "https://blog.octalmage.com",
     type: "links",
     icon: "tumblr.svg",
@@ -151,26 +151,12 @@ const webLinks = [
     on: true,
   },
   {
-    title: "Cosmos",
-    url: "https://cosmos.network",
-    type: "other",
-    icon: "tumblr.svg",
-    on: true,
-  },
-  {
     title: "Akash",
     url: "https://akash.network",
     type: "other",
     icon: "tumblr.svg",
     on: true,
-  },
-  {
-    title: "ens",
-    url: "https://ens.domains",
-    type: "other",
-    icon: "tumblr.svg",
-    on: true,
-  },
+  }
 ];
 
 export default webLinks;

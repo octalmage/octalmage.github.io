@@ -11,8 +11,8 @@ const bioData = [
         descShow: true,
         subdesc: '',
         subdescShow: false,
-        newProductUrl: 'https://jax.zone',
-        newProduct: false,
+        newProductUrl: 'https://o8.is',
+        newProduct: true,
         author: 'octalmage',
         authorURL: '',
         footerText: 'made by'

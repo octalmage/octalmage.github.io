@@ -138,6 +138,16 @@ const Links = () => {
                   </a>
                 );
               })}
+
+              {newProduct ? (
+                <NewSection>
+                  <a href={newProductUrl} target="_blank" rel="noreferrer">
+                    <img src={"newproduct.png"} className="newproduct" />
+                  </a>
+                </NewSection>
+              ) : (
+                ""
+              )}
             </LinkSection>
             {/* End Links Section */}
 
@@ -167,20 +177,10 @@ const Links = () => {
               ""
             )}
             {/* End NFT Section */}
-
             <LinkSection>
-              <h3>{others[0].type}</h3>
+              <h3>Built With</h3>
               {/* BioData.js > newProduct == true */}
-              {/* New Section will render once newProduct == true */}
-              {newProduct ? (
-                <NewSection>
-                  <a href={newProductUrl} target="_blank" rel="noreferrer">
-                    <img src={"newproduct.png"} className="newproduct" />
-                  </a>
-                </NewSection>
-              ) : (
-                ""
-              )}
+              
               {/* End Biodata.js, You can move this section anywhere */}
               {others.map((i) => {
                 return (
@@ -215,10 +215,7 @@ const Links = () => {
         </TopPart>
         <BottomPart>
           <LinkFoot>
-            <br />
-            <StyledLink href="https://octalmage.eth.limo">
-              octalmage.eth
-            </StyledLink>
+
           </LinkFoot>
         </BottomPart>
       </LinkContainer>

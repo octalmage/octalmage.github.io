@@ -19,7 +19,7 @@ jobs:
         run: npm ci --legacy-peer-deps && npm run build
 
       - name: Deploy to Swarm
-        uses: o8is/hostasis-cli@v0.1.2
+        uses: o8is/hostasis-cli@v0.2.0
         with:
           batch-id: ${{ secrets.HOSTASIS_BATCH_ID }}
           key: ${{ secrets.HOSTASIS_PRIVATE_KEY }}
